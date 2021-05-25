@@ -9,3 +9,5 @@ for(let i = 1; i <= testC; i++){
 
     console.log(Number(num[0]) + Number(num[1]));
 }
+
+
