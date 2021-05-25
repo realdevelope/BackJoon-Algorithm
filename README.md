@@ -11,6 +11,7 @@
 -> node.js로는 못푸는 문제들이 있고, 한달전 백준 공식 이슈도 있었다.ㅠㅠㅠㅠ
 
 ## 👍Node.js 입출력 방법 
+아래의 입력 방법을 통해서 고생을 덜으셨으면 좋겠습니다..
 ### 한줄 입력시
 ```js
 let input = require('fs').readFileSync('/dev/stdin').toString().split(" "); 

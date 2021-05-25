@@ -1,13 +1,11 @@
-//A + B - 브론즈 3
+//A + B (3) - 브론즈 3
 
-let input = require('fs').readFileSync('/dev/stdin').toString().split(" ");
-let testC = parseint(input[0])//.split(' ');
+let input = require('fs').readFileSync('/dev/stdin').toString().split("\n"); 
 
-for(let i =1; i <= testC[0]; i++){
-    let numA = parseInt(input[0])//.split(' ');
-    let numB = parseInt(input[1])//.split(' ');
+let testC = input[0].split(' ');
 
-    console.log(numA + numB);
+for(let i = 1; i <= testC; i++){
+    let num = input[i].split(' ');
+
+    console.log(Number(num[0]) + Number(num[1]));
 }
-
-// 왜 계속 런타임에러 뜨는지 모르겠음ㅠㅠ

@@ -2,12 +2,10 @@
 
 let input = require('fs').readFileSync('/dev/stdin').toString().split(" "); 
 
-let numN = parseInt(input);
+let jjikKi = 0;
 
-for(let i = 1; i <= numN; i++){
-        console.log(i);
+for(let i = 1; i <= input; i++){  
+     jjikKi += i + "\n";
     }
 
-
-
-    // 시간초과... 후
+console.log(jjikKi);

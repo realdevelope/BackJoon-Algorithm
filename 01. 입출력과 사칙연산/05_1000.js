@@ -1,4 +1,4 @@
-// A + B   - 브론즈5
+// A + B  - 브론즈5
 
 let input = require('fs').readFileSync('/dev/stdin').toString().split(" ");
     

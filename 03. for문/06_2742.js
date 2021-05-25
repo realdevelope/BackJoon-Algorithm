@@ -2,11 +2,12 @@
 
 let input = require('fs').readFileSync('/dev/stdin').toString().split(" "); 
 
-let numN = parseInt(input);
+let kiJjik = '';
 
-for(let i = numN; i >= 0; i--){
-    console.log(i);
-}
+for(let i = input; i >= 1; i--){  
+    kiJjik += i + "\n";
+    }
 
+console.log(kiJjik);
 
-// 시간초과... 후
+// 출력형식이 잘못됬다고??.....살려줘 
