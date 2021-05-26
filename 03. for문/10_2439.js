@@ -9,7 +9,7 @@ for(let i = 0; i < testC; i++){
 
 
     for(let j = 0; j < testC; j++) {
-        if(j < testC - (i +1)) {
+        if(j < testC - (i + 1)) {
             result += " "; 
         }
         else{
