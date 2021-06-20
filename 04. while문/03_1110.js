@@ -9,9 +9,10 @@
 let input = `26
 55
 1
-0`.split(" ");
+0`.split("\n");
 
-let num = input//.split(" ");
+let w = Number(input[0]);
+let num = w;//.split(" ");
 let sum;
 let i = 0;
 
@@ -20,12 +21,9 @@ while (true) {
     sum = Math.floor(num / 10) + num % 10;
     num = (num % 10) * 10 + sum % 10; 
 
-    if(input === num){
+    if(w === num){
         break;
     }  
 }
 
-console.log(i);
-
-
-//흠.. 내일다시..
+console.log(i); 
