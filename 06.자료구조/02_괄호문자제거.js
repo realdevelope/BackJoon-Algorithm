@@ -1,7 +1,7 @@
 function solution(s){
     
     let answer;
-    stack = [];   
+    let stack = [];   
     
     for(let x of s){                    ////for ...of 는 s라는 객체의 모든 프로퍼티를 순회함!! 
         if(x === ')'){

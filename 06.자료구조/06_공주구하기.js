@@ -1,7 +1,7 @@
 function solution(n, k){
     
     let answer;
-    let queue = Array.from({length: n}, (v, i) => i + 1);      //길이가 n인 유사배열객체 -> 큐라는 자료구조 생성되긴하는데 길이만 n인 객체가 생성된다고함( GDY 살려줘ㅠㅠ)
+    let queue = Array.from({length: n}, (v, i) => i + 1);      //길이가 n인 유사배열객체 -> 큐라는 자료구조 생성되긴하는데 길이만 n인 객체가 생성된다고함
     
     while(queue.length){                                    // 큐에 1나있을떄 까지 반복 0이면 멈춤
         for(let i = 1; i < k; i++){

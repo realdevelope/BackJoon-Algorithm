@@ -1,7 +1,7 @@
 function solution(s){
     
     let answer;
-    stack = [];  
+    let stack = [];  
     
     for(let x of s){
         if(!isNaN(x)){                      //숫자를 만나면push -   isNaN : 숫자인지 아닌지 확인하는것(숫자가 아니면 참) Number.isNaN(x)에서 isNaN한번 써봄 ㅋ
