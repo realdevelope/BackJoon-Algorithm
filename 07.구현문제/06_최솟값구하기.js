@@ -1,7 +1,7 @@
 function solution(arr){
     
     let answer;
-    let min = arr[0];
+    let min = arr[0];   //0번째 인덱스를 픽스박고 포문으로 하나씩 비교하면서 min값 추출
 
     for(let i = 1; i < arr.length; i++){
         if(arr[i] < min){
