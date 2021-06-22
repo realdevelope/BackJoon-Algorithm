@@ -22,3 +22,4 @@ function solution(a, b, c){
 
 console.log(solution(13, 33, 17)); 
 
+//그리디로 풀어보기---GDY피드백

@@ -14,3 +14,5 @@ function solution(arr){
 
 let arr = [5, 7, 1, 3, 2, 9, 11];
 console.log(solution(arr)); 
+
+// Math.min 써서 if 없애고 다시풀어보기 GDY피드백
