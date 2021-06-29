@@ -1,22 +1,23 @@
 function solution(arr){  
     let answer = Number.MIN_SAFE_INTEGER;
-    let sum1 = sum2 = 0;
+    let n = arr.length                          //5
+    let sum1 = sum2 = 0;                        //sum1 - 행의합, sum2 - 열의합
 
-    for(let i = 0; i < arr.length; i++){
-        sum1 = sum2 = 0;
-        for(let j = 0; j < arr.length; j++){
-            sum1 += arr[i][j];
-            sum2 += arr[j][i];
+    for(let i = 0; i < n; i++){
+        sum1 = sum2 = 0;                        //누적하려면 처음에 초기화해줘야함
+        for(let j = 0; j < n; j++){
+            sum1 += arr[i][j];                  //행의합
+            sum2 += arr[j][i];                  //열의합
         }
-        answer = Math.max(answer, sum1, sum2);
+        answer = Math.max(answer, sum1, sum2);  //NDY 말대로 내장함수사용ㅋ
     }
-    sum1 = sum2 = 0;
-    
-    for(let i = 0; i < arr.length; i++){
-        sum1 += arr[i][i];
-        sum2 += arr[i][arr.length-i-1];
-    }  
-    answer = Math.max(answer, sum1, sum2); 
+
+    sum1 = sum2 = 0;                            //마찬가지로 다시 초기화
+    for(let i = 0; i < n; i++){
+        sum1 += arr[i][i];                      // 첫번쨰 \대각선은 1,1 / 2,2 .....이런식이기떄문에 
+        sum2 += arr[i][n-i-1];                  //이중포문없이 arr[i][i]가 되고, 
+    }                                           // 두번쨰 /대각선은 4,0 / 3,1 .... 이런식이기 때문에
+    answer = Math.max(answer, sum1, sum2);      // 이중포문없이 arr[i][n - i - 1]이 된다.
     
     return answer;
 }
